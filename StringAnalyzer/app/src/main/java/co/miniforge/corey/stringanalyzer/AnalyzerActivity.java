@@ -24,7 +24,7 @@ public class AnalyzerActivity extends AppCompatActivity {
     TextView specialCharactersCount;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analyzer);
 
@@ -37,7 +37,7 @@ public class AnalyzerActivity extends AppCompatActivity {
         bindData();
     }
 
-    void locateViews() {
+    public void locateViews() {
         this.messageTextView = (TextView) findViewById(R.id.messageTextView);
         this.characterCount = (TextView) findViewById(R.id.characterCount);
         this.wordCount = (TextView) findViewById(R.id.wordCount);
@@ -48,7 +48,7 @@ public class AnalyzerActivity extends AppCompatActivity {
         this.backToInputButton = (Button) findViewById(R.id.backToInputButton);
     }
 
-    void getIntentData(){
+    public void getIntentData(){
         if(getIntent().hasExtra(InputActivity.intentTag)){
             this.message = getIntent().getStringExtra(InputActivity.intentTag);
 
@@ -56,7 +56,7 @@ public class AnalyzerActivity extends AppCompatActivity {
         }
     }
 
-    void bindData(){
+    public void bindData(){
         messageTextView.setText(message);
 
         characterCount.setText(String.format("Character Count: %d", textUtil.getTextCharacterCount()));

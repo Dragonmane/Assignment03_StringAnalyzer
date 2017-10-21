@@ -23,12 +23,12 @@ public class InputActivity extends AppCompatActivity {
         bindFunctionality();
     }
 
-    void locateViews(){
+    public void locateViews(){
         input = (EditText) findViewById(R.id.stringToAnalyzeEditText);
         submit = (Button) findViewById(R.id.submitButton);
     }
 
-    void bindFunctionality(){
+    public void bindFunctionality(){
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
