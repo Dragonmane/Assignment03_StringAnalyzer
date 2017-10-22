@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">The Guesing Game Assignment 2</string>
+    <string name="welcome_to_number_guess">Welcome to Number Guess!</string>
+    <string name="title_activity_guessing">GuessingActivity</string>
+</resources>
